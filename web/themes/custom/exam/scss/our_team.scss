@@ -1,0 +1,234 @@
+@import "mixins";
+@import "custom-variables";
+.team_full{
+  .views-field-fieldset {
+    margin:25px auto 0 auto;
+    max-width: 290px;
+    div{
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  margin-top: 30px;
+  img{
+    margin: 0 auto;
+  }
+  .view-content{
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    .views-row{
+      .views-field-field-socials{
+        ul{
+          margin-top: -5px;
+        }
+      }
+      .platforms{
+        li{
+          a{
+            font-size: 10px;
+            padding: 10px 5px 5px 5px;
+          }
+        }
+      }
+      margin-top: 30px;
+      width: 50%;
+      .views-field-title{
+        font-size: 24px;
+        margin-top: 35px;
+        letter-spacing: 0.3px;
+      }
+      .views-field-field-role-in-team{
+        margin-bottom: 0;
+        font-size:12px ;
+      }
+      .views-field-field-role-in-team{
+        margin-top: 1.25px;
+        color:#ccc;
+        margin-bottom: 21px;
+      }
+      .views-field-link-flag{
+        width: 20px;
+        height: 20px;
+        .action-flag{
+          position: relative;
+          width: 20px;
+          height: 20px;
+          a{
+            display: block;
+            opacity: 0;
+            width: 20px;
+            height: 20px;
+          }
+        }
+        .action-flag:before{
+          left:-1px;
+          position: absolute;
+          content: '';
+          z-index: -1;
+          width: 20px;
+          height: 20px;
+          background: url("../images/heart_disabled.png") center no-repeat;
+          background-size:20px;
+        }
+        .action-unflag{
+          position: relative;
+          width: 20px;
+          height: 20px;
+          a{
+            display: block;
+            opacity: 0;
+            width: 20px;
+            height: 20px;
+          }
+        }
+        .action-unflag:before {
+          left: -1px;
+          position: absolute;
+          content: '';
+          z-index: -1;
+          width: 20px;
+          height: 20px;
+          background: url("../images/heart_enabled.png") center no-repeat;
+          background-size: 20px;
+        }
+      }
+
+      a{
+        text-decoration: none;
+        color:#fff;
+        font-size: 14px;
+        padding:7px 9px;
+        background:$main_black;
+        text-transform: uppercase;
+        border:0.1px solid transparent;
+        transition: 0.3s ease;
+      }
+      a:hover{
+        border:0.1px solid #000;
+        transition: 0.3s ease;
+        background: transparent;
+        color:#000;
+      }
+    }
+  }
+}
+.team_title{
+  margin-top: 95px;
+  @include title_styles;
+  h2{
+    min-width: 156px;
+    font-weight: 800;
+  }
+}
+.team{
+  margin-top: 34px;
+  margin-bottom: 185px;
+  .view-content{
+    display: flex;
+  }
+  .views-row{
+    .platforms{
+      ul{
+        margin-top: -5px;
+      }
+      li{
+        a{
+          font-size: 10px;
+          padding: 10px 5px 5px 5px;
+        }
+      }
+    }
+    margin-right:30px;
+    max-width: 290px;
+    font-family: "Lato" ,sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    .views-field-link-flag{
+      width: 20px;
+      height: 20px;
+      .action-flag{
+        position: relative;
+        width: 20px;
+        height: 20px;
+        a{
+          display: block;
+          opacity: 0;
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .action-flag:before{
+        left:-1px;
+        position: absolute;
+        content: '';
+        z-index: -1;
+        width: 20px;
+        height: 20px;
+        background: url("../images/heart_disabled.png") center no-repeat;
+        background-size:20px;
+      }
+      .action-unflag{
+        position: relative;
+        width: 20px;
+        height: 20px;
+        a{
+          display: block;
+          opacity: 0;
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .action-unflag:before {
+        left: -1px;
+        position: absolute;
+        content: '';
+        z-index: -1;
+        width: 20px;
+        height: 20px;
+        background: url("../images/heart_enabled.png") center no-repeat;
+        background-size: 20px;
+      }
+    }
+    .views-field-fieldset {
+      margin:25px auto 0 auto;
+      max-width: 290px;
+      div{
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+    .views-field-title{
+      font-size: 24px;
+      margin-top: 30px;
+      letter-spacing: 0.3px;
+    }
+    .views-field-field-role-in-team{
+      margin-bottom: 0;
+      font-size:12px ;
+    }
+    .views-field-field-role-in-team{
+      color:#ccc;
+      margin-bottom: 18px;
+    }
+    a{
+      text-decoration: none;
+      color:#fff;
+      font-size: 14px;
+      padding:7px 9px;
+      background:$main_black;
+      border:0.1px solid transparent;
+      transition: 0.3s ease;
+    }
+    a:hover{
+      border:0.1px solid #000;
+      transition: 0.3s ease;
+      background: transparent;
+      color:#000;
+    }
+  }
+  .views-row:nth-child(4){
+    margin-right: 0;
+  }
+}

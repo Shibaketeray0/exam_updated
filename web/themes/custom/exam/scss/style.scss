@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import 'mixins';
+@import 'custom-variables';
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss';
+
+@import "fonts";
+@import "header";
+@import "about_block";
+@import "services";
+@import "projects";
+@import "our_team";
+@import "news";
+@import "clients";
+@import "footer";
+@import "contact";
+/*basic overrides*/
+h1,h2,h3,h4,h5,h6{
+  margin:0;
+}
+.row{
+  .view-main-search-page-{
+    max-width: 1250px;
+    margin: 30px auto;
+    span{
+      font-family: "Lato", sans-serif;
+      display: block;
+      margin-top: 30px;
+      a{
+        text-transform: uppercase;
+        padding:15px 5px;
+        transition: 0.3s ease;
+        text-decoration: none;
+      }
+      a:hover{
+        transition: 0.3s ease;
+        background: #ccc;
+      }
+    }
+    input{
+      display: inline-block;
+    }
+    .form--inline{
+      display: flex;
+    }
+  }
+}
+.mm-slideout{
+  display: flex;
+  flex-direction: column;
+}
+.dialog-off-canvas-main-canvas{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+body{
+  height: 100%;
+  margin:0;
+  padding:0;
+  display: flex;@import "header";
+
+  flex-direction: column;
+}
+html{
+  height:100%
+}
+/*wrapper for main content to push footer to the bottom of the page*/
+.wrapper2{
+  flex: 1 0 auto;
+}
+.row{
+  margin-left:0;
+  margin-right: 0;
+}
+.wrapper{
+  background: url("../images/header.png") center no-repeat;
+  min-height: 700px;
+  position: relative;
+  z-index: -1;
+}
+/*to hide "..." when pager under projects has 4 or more pages */
+li[role=presentation]{
+  display: none;
+}
+/*margin for dummy content on "About" page*/
+.lorem_content{
+  padding-top: 30px;
+}
+/*css for each page e.g. separate page of service, worker, project etc. */
+.services_full{
+  .block-extra-field-blocknodeour-teamflag-custom-like{
+    width: 20px;
+    height: 20px;
+    .action-flag{
+      position: relative;
+      width: 20px;
+      height: 20px;
+      a{
+        display: block;
+        opacity: 0;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .action-flag:before{
+      left:-1px;
+      position: absolute;
+      content: '';
+      z-index: -1;
+      width: 20px;
+      height: 20px;
+      background: url("../images/heart_disabled.png") center no-repeat;
+      background-size:20px;
+    }
+    .action-unflag{
+      position: relative;
+      width: 20px;
+      height: 20px;
+      a{
+        display: block;
+        opacity: 0;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .action-unflag:before {
+      left: -1px;
+      position: absolute;
+      content: '';
+      z-index: -1;
+      width: 20px;
+      height: 20px;
+      background: url("../images/heart_enabled.png") center no-repeat;
+      background-size: 20px;
+    }
+  }
+  img{
+    max-height:290px;
+    max-width:290px;
+  }
+  .views-row{
+    .views-field-title{
+      a{
+        text-transform: uppercase;
+        font-family: "lato", sans-serif;
+        text-decoration: none;
+        color:$light_blue;
+        padding:12px;
+        transition:0.3s ease;
+      }
+      a:hover{
+        background:lightgray;
+        transition:0.3s ease;
+      }
+      margin:15px 0;
+    }
+  }
+}
+.is-promoted{
+  margin: 0;
+  background: none;
+}
+.services_full{
+  .block-extra-field-blocknodeour-teamflag-custom-like{
+    margin-top: 15px;
+  }
+  .block-field-blocknodeour-teamtitle{
+    span{
+      font-size: 24px;
+      margin-top: 35px;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+  }
+  margin-top:30px;
+  font-family: "Lato", sans-serif;
+  h3{
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+  .views-field-title{
+    font-size: 21px;
+    text-transform: uppercase;
+    word-spacing: 0.1px;
+    letter-spacing: -0.8px;
+    margin-top: 37px;
+    padding-right: 5px;
+
+  }
+  .profession{
+    margin-top: 1.25px;
+    color:#ccc;
+    margin-bottom: 5px;
+  }
+  .look-at-me{
+    margin-top: 10px;
+    a{
+      text-transform: uppercase;
+      text-decoration: none;
+      color:#fff;
+      font-size: 14px;
+      padding:7px 9px;
+      background:$main_black;
+    }
+  }
+  ul{
+    list-style-type: none;
+    margin:15px 0 0 0;
+    padding:0;
+    display: inline-flex;
+    li{
+      margin-left: 10px;
+      a{
+        display: block;
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}
+.projects_full{
+  .block-field-blocknodeprojectstitle{
+    span{
+      font-size: 24px;
+      margin-top: 35px;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+  }
+  margin-top: 30px;
+  .view-content{
+    display: flex;
+    flex-wrap: wrap;
+    .views-row{
+      margin-top: 30px;
+      width: 50%;
+      text-align: center;
+      img{
+        margin:0 auto;
+      }
+      a{
+        text-transform: uppercase;
+        margin-right: 4px;
+        padding:5px 10px;
+        background:$main_black;
+        color:#fff;
+        text-decoration: none;
+        border:0.1px solid transparent;
+        transition: 0.3s ease;
+      }
+      a:hover{
+        border:0.1px solid #000;
+        transition: 0.3s ease;
+        background: transparent;
+        color:#000;
+      }
+    }
+  }
+}
+.content_body{
+  .block-field-blocknodenews-title{
+    span{
+      font-size: 24px;
+      margin-top: 35px;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+  }
+  img{
+    width: 78px;
+    height:78px;
+    margin-bottom: 30px;
+  }
+  margin-top:30px;
+  .field--name{
+    &-field-writerr{
+      text-transform: uppercase;
+      span{
+        vertical-align: top;
+        font-size: 12px;
+        line-height: 7px;
+      }
+      span:nth-child(2){
+        margin-left:10px;
+        letter-spacing:-0.4px;
+        color:#ccc;
+      }
+      span:nth-child(3){
+        color:#000;
+      }
+      span:nth-child(4){
+        color:$light_blue;
+      }
+    }
+  }
+}
+.services_page{
+  margin-top: 30px;
+  .block-field-blocknodeservicestitle{
+    span{
+      font-size: 24px;
+      margin-top: 35px;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+  }
+}
+.news-{
+  margin-top: 30px;
+}
+.row{
+
+  #user-login-form {
+    max-width: 1250px;
+    margin:30px auto 0 auto;
+  }
+  .content_body{
+    max-width: 1000px;
+    margin:30px auto 0 auto;
+    p{
+      word-break: break-all;
+      white-space: normal;
+    }
+  }
+}
+.contextual-region{
+  .field--name-user-picture,
+  .form-item-,
+  .js-flag-following-1,
+  .field--name-field-role,
+  .field--name-name{
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+  .field--name-user-picture{
+    margin-top: 30px;
+  }
+
+}
+.clients{
+  margin-top: 300px;
+  .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img{
+    max-width:200px ;
+  }
+}
+.webform-confirmation{
+  .webform-confirmation__back{
+    a{
+      text-transform: uppercase;
+      text-decoration: none;
+      padding:10px;
+      transition: 0.3s ease;
+      background: #ccc;
+    }
+    a:hover{
+      transition: 0.3s ease;
+      background: gray;
+    }
+  }
+}
+@import "media_queries";
+
+

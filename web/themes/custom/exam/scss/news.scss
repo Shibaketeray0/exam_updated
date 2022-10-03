@@ -1,0 +1,316 @@
+@import "mixins";
+@import "custom-variables";
+.news_title{
+  @include title_styles;
+  h2{
+    font-weight: 800;
+    margin:0 28px;
+  }
+}
+.form-group{
+  margin-bottom: 10px;
+}
+.news_block{
+  background: repeating-linear-gradient(-45deg, #dbdbdb 0, #dbdbdb 1px, transparent 1px, transparent 8px);
+  margin-top:26px;
+  padding-bottom: 73px;
+  form{
+    display: flex;
+  }
+  .form--inline{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    height:47px;
+    background: #fff;
+    .form-control{
+      min-width: 342px;
+      padding:6px 12px;
+      height: 36px;
+    }
+    .form-control:focus{
+      border-color:#ccc;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+    }
+    .btn{
+      margin-left: 3px;
+      padding:7px 14px ;
+    }
+  }
+  .view-content{
+    display: flex;
+  }
+  .views-row:nth-child(2){
+    margin-left: 30px;
+  }
+  .views-row{
+    padding:0 20px 27px 0;
+    background: #fff;
+    font-family: "Lato",sans-serif;
+    text-transform: uppercase;
+    max-width: 610px;
+    .content{
+      display: flex;
+    }
+    .views-field-fieldset{
+      padding:12px 0 21px 0;
+      width: 75px;
+      display: inline-block;
+      .views-field-field-date-{
+        &month{
+          color:$main_black;
+          font-size: 25px;
+          text-align: center;
+          margin-left: 5px;
+        }
+        &day{
+          color:$light_blue;
+          font-size: 45px;
+          margin-top: -16px;
+          text-align: center;
+          margin-left: 7px;
+
+        }
+        &year{
+          text-align: center;
+          color:#ccc;
+          font-size: 14px;
+          margin-left: 5px;
+          margin-top:-13px;
+        }
+      }
+    }
+    .views-field-fieldset-1{
+        height: 150px;
+        border-left:1px solid #ccc;
+        padding-left: 17px;
+        margin-left:89px;
+        margin-top: -7px;
+        .field-content{
+          .views-field-title{
+            font-size: 25px;
+            margin-top: -15px;
+          }
+          .views-field-body{
+            margin-top: 7px;
+            font-size: 12px;
+            letter-spacing: -0.6px;
+            line-height: 15px;
+            height: 60px;
+            p{
+              word-break: break-all;
+              white-space: normal;
+            }
+          }
+        }
+      .views-field-link-to-revision{
+        display: flex;
+        flex-direction: row-reverse;
+        a{
+          color:#fff;
+          padding:7px 9px 7px 9px ;
+          background:$main_black;
+          text-decoration: none;
+          border:0.1px solid transparent;
+          transition: 0.3s ease;
+        }
+        a:hover{
+          border:0.1px solid #000;
+          transition: 0.3s ease;
+          background: transparent;
+          color:#000;
+        }
+      }
+      .views-field-revision-timestamp{
+        width: 20%;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: auto;
+        text-align: right;
+        span{
+          color:#ccc;
+          font-size: 12px;
+        }
+      }
+    }
+    .views-field-fieldset-2{
+      margin-left: 14px;
+      padding-left: 20px;
+      border-left: 1px solid #ccc;
+      display: inline-block;
+      width: 84%;
+      fieldset{
+        display: flex;
+      }
+      .views-field-field-role{
+        font-size: 12px;
+        margin-left:10px;
+        letter-spacing:-0.4px;
+        color:#ccc;
+      }
+      .views-field-name{
+        margin-left: 3px;
+        font-size: 12px;
+
+        color:#000;
+      }
+      .views-field-field-topic{
+        margin-left: 3px;
+        font-size: 12px;
+        color:$light_blue;
+      }
+      .views-field-revision-timestamp{
+        font-size: 12px;
+        color:#ccc;
+        margin-left: auto;
+      }
+    }
+    img{
+      width: 78px;
+      height:78px;
+    }
+  }
+}
+.news_block_v2{
+  margin-top:30px;
+  padding-bottom: 73px;
+  .views-row{
+    border:1px solid #ccc;
+    padding:0 20px 27px 0;
+    margin-top: 30px;
+    background: #fff;
+    font-family: "Lato",sans-serif;
+    text-transform: uppercase;
+    max-width: 610px;
+    .content{
+      display: flex;
+    }
+    .views-field-fieldset{
+      padding:12px 0 21px 0;
+      width: 75px;
+      display: inline-block;
+      .views-field-field-date-{
+        &month{
+          color:$main_black;
+          font-size: 25px;
+          text-align: center;
+          margin-left: 5px;
+        }
+        &day{
+          color:$light_blue;
+          font-size: 45px;
+          margin-top: -16px;
+          text-align: center;
+          margin-left: 7px;
+
+        }
+        &year{
+          text-align: center;
+          color:#ccc;
+          font-size: 14px;
+          margin-left: 5px;
+          margin-top:-13px;
+        }
+      }
+    }
+    .views-field-fieldset-1{
+      height: 150px;
+      border-left:1px solid #ccc;
+      padding-left: 17px;
+      margin-left:89px;
+      margin-top: -7px;
+      .field-content{
+        .views-field-title{
+          font-size: 25px;
+          margin-top: -15px;
+        }
+        .views-field-body{
+          margin-top: 7px;
+          font-size: 12px;
+          letter-spacing: -0.6px;
+          line-height: 15px;
+          height: 60px;
+          p{
+            word-break: break-all;
+            white-space: normal;
+          }
+        }
+      }
+      .views-field-link-to-revision{
+        display: flex;
+        flex-direction: row-reverse;
+        a{
+          color:#fff;
+          padding:7px 9px 7px 9px ;
+          background:$main_black;
+          text-decoration: none;
+          border:0.1px solid transparent;
+          transition: 0.3s ease;
+        }
+        a:hover{
+          border:0.1px solid #000;
+          transition: 0.3s ease;
+          background: transparent;
+          color:#000;
+        }
+      }
+      .views-field-revision-timestamp{
+        width: 20%;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: auto;
+        text-align: right;
+        span{
+          color:#ccc;
+          font-size: 12px;
+        }
+      }
+    }
+    .views-field-fieldset-2{
+      margin-left: 14px;
+      padding-left: 20px;
+      border-left: 1px solid #ccc;
+      display: inline-block;
+      width: 84%;
+      fieldset{
+        display: flex;
+      }
+      .views-field-field-role{
+        font-size: 12px;
+        margin-left:10px;
+        letter-spacing:-0.4px;
+        color:#ccc;
+      }
+      .views-field-name{
+        margin-left: 3px;
+        font-size: 12px;
+
+        color:#000;
+      }
+      .views-field-field-topic{
+        margin-left: 3px;
+        font-size: 12px;
+        color:$light_blue;
+      }
+      .views-field-revision-timestamp{
+        font-size: 12px;
+        color:#ccc;
+        margin-left: auto;
+      }
+    }
+
+    img{
+      width: 78px;
+      height:78px;
+    }
+  }
+  .view-content{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .views-row:nth-child(2n){
+    margin-left: 30px;
+  }
+
+}
