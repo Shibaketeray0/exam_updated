@@ -6169,7 +6169,7 @@ li[role=presentation] {
 }
 
 .clients {
-  margin-top: 300px;
+  margin-top: 30px;
 }
 .clients .img-responsive, .clients .thumbnail > img, .clients .thumbnail a > img, .clients .carousel-inner > .item > img, .clients .carousel-inner > .item > a > img {
   max-width: 200px;
@@ -6185,6 +6185,10 @@ li[role=presentation] {
 .webform-confirmation .webform-confirmation__back a:hover {
   transition: 0.3s ease;
   background: gray;
+}
+
+.content_body .block-field-blocknodenews-body {
+  font-size: 20px;
 }
 
 /*!
