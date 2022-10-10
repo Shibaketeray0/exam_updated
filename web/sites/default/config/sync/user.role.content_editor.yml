@@ -1,0 +1,132 @@
+uuid: 67758e2f-e38c-4b29-9bfe-bbdde0b454b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.clients
+    - node.type.content_page
+    - node.type.map
+    - node.type.news_
+    - node.type.our_team
+    - node.type.page
+    - node.type.projects
+    - node.type.services
+    - node.type.webform
+    - taxonomy.vocabulary.tags
+  module:
+    - comment
+    - contextual
+    - file
+    - node
+    - path
+    - system
+    - taxonomy
+    - toolbar
+    - tour
+_core:
+  default_config_hash: Wur9kcEOwY1Jal81NssKnz3RhVJxAvBwyWQBGcA_1Go
+id: content_editor
+label: 'Content editor'
+weight: 2
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'administer content types'
+  - 'administer nodes'
+  - 'administer url aliases'
+  - 'bypass node access'
+  - 'create article content'
+  - 'create clients content'
+  - 'create content_page content'
+  - 'create map content'
+  - 'create news_ content'
+  - 'create our_team content'
+  - 'create page content'
+  - 'create projects content'
+  - 'create services content'
+  - 'create terms in tags'
+  - 'create url aliases'
+  - 'create webform content'
+  - 'delete all revisions'
+  - 'delete any article content'
+  - 'delete any clients content'
+  - 'delete any content_page content'
+  - 'delete any map content'
+  - 'delete any news_ content'
+  - 'delete any our_team content'
+  - 'delete any page content'
+  - 'delete any projects content'
+  - 'delete any services content'
+  - 'delete any webform content'
+  - 'delete article revisions'
+  - 'delete clients revisions'
+  - 'delete content_page revisions'
+  - 'delete map revisions'
+  - 'delete news_ revisions'
+  - 'delete our_team revisions'
+  - 'delete own article content'
+  - 'delete own clients content'
+  - 'delete own content_page content'
+  - 'delete own map content'
+  - 'delete own news_ content'
+  - 'delete own our_team content'
+  - 'delete own page content'
+  - 'delete own projects content'
+  - 'delete own services content'
+  - 'delete own webform content'
+  - 'delete page revisions'
+  - 'delete projects revisions'
+  - 'delete services revisions'
+  - 'delete webform revisions'
+  - 'edit any article content'
+  - 'edit any clients content'
+  - 'edit any content_page content'
+  - 'edit any map content'
+  - 'edit any news_ content'
+  - 'edit any our_team content'
+  - 'edit any page content'
+  - 'edit any projects content'
+  - 'edit any services content'
+  - 'edit any webform content'
+  - 'edit own article content'
+  - 'edit own clients content'
+  - 'edit own comments'
+  - 'edit own content_page content'
+  - 'edit own map content'
+  - 'edit own news_ content'
+  - 'edit own our_team content'
+  - 'edit own page content'
+  - 'edit own projects content'
+  - 'edit own services content'
+  - 'edit own webform content'
+  - 'edit terms in tags'
+  - 'revert all revisions'
+  - 'revert article revisions'
+  - 'revert clients revisions'
+  - 'revert content_page revisions'
+  - 'revert map revisions'
+  - 'revert news_ revisions'
+  - 'revert our_team revisions'
+  - 'revert page revisions'
+  - 'revert projects revisions'
+  - 'revert services revisions'
+  - 'revert webform revisions'
+  - 'view all revisions'
+  - 'view article revisions'
+  - 'view clients revisions'
+  - 'view content_page revisions'
+  - 'view map revisions'
+  - 'view news_ revisions'
+  - 'view our_team revisions'
+  - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view projects revisions'
+  - 'view services revisions'
+  - 'view the administration theme'
+  - 'view webform revisions'

@@ -1,0 +1,15 @@
+uuid: 15258a97-4c9b-4b4b-95b0-6730dd4c7ae3
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_exclude
+id: content_exclude_
+label: 'Content (Exclude)'
+path: search
+weight: 0
+plugin: search_exclude_node_search
+configuration:
+  rankings: {  }
+  excluded_bundles:
+    clients: clients

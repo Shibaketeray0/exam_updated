@@ -1,0 +1,19 @@
+uuid: 5392868a-0fcf-4739-a82f-43da292745d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_role_in_team
+    - node.type.our_team
+id: node.our_team.field_role_in_team
+field_name: field_role_in_team
+entity_type: node
+bundle: our_team
+label: Role
+description: 'Role in team'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

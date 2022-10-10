@@ -1,0 +1,22 @@
+uuid: 02b7ca6d-1195-4a01-a811-40401c868bca
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: test
+label: test
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:field_company_picture:target_id]'
+selection_criteria:
+  c9d487e2-a050-44b4-a83e-5b512221b1db:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: c9d487e2-a050-44b4-a83e-5b512221b1db
+    context_mapping:
+      node: node
+    bundles:
+      clients: clients
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,26 @@
+uuid: fc1118e7-1417-4152-b5ff-9594008ddb82
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: services_
+label: 'Services '
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      services: services
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

@@ -1,0 +1,279 @@
+uuid: c1483e48-c761-4e83-b121-94aa16f0a210
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.our_team.body
+    - field.field.node.our_team.field_role_in_team
+    - field.field.node.our_team.field_socials
+    - field.field.node.our_team.field_worker_photo
+    - field.field.node.our_team.layout_builder__layout
+    - node.type.our_team
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: 'bootstrap_layout_builder:blb_col_1'
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          container_wrapper_classes: services_full
+          container_wrapper_attributes: null
+          container_wrapper:
+            bootstrap_styles:
+              background:
+                background_type: color
+              background_color:
+                class: null
+              background_media:
+                image:
+                  media_id: null
+                video:
+                  media_id: null
+                background_options:
+                  background_position: center
+                  background_repeat: no-repeat
+                  background_attachment: not_fixed
+                  background_size: cover
+              text_color:
+                class: null
+              text_alignment:
+                class: null
+              padding:
+                class: _none
+              padding_left:
+                class: _none
+              padding_top:
+                class: _none
+              padding_right:
+                class: _none
+              padding_bottom:
+                class: _none
+              margin:
+                class: _none
+              margin_left:
+                class: _none
+              margin_top:
+                class: _none
+              margin_right:
+                class: _none
+              margin_bottom:
+                class: _none
+              border:
+                border_style:
+                  class: null
+                border_width:
+                  class: _none
+                border_color:
+                  class: null
+                rounded_corners:
+                  class: _none
+                border_left_style:
+                  class: null
+                border_left_width:
+                  class: _none
+                border_left_color:
+                  class: null
+                border_top_style:
+                  class: null
+                border_top_width:
+                  class: _none
+                border_top_color:
+                  class: null
+                border_right_style:
+                  class: null
+                border_right_width:
+                  class: _none
+                border_right_color:
+                  class: null
+                border_bottom_style:
+                  class: null
+                border_bottom_width:
+                  class: _none
+                border_bottom_color:
+                  class: null
+                rounded_corner_top_left:
+                  class: _none
+                rounded_corner_top_right:
+                  class: _none
+                rounded_corner_bottom_left:
+                  class: _none
+                rounded_corner_bottom_right:
+                  class: _none
+              scroll_effects:
+                class: null
+          container_wrapper_bg_color_class: ''
+          container_wrapper_bg_media: null
+          container: container
+          section_classes: ''
+          section_attributes: null
+          regions_classes:
+            blb_region_col_1: ''
+          regions_attributes:
+            blb_region_col_1: {  }
+          breakpoints: {  }
+          layout_regions_classes: {  }
+          remove_gutters: '0'
+        components:
+          a7a6b979-424c-4647-b3bb-e287fe36b00d:
+            uuid: a7a6b979-424c-4647-b3bb-e287fe36b00d
+            region: blb_region_col_1
+            configuration:
+              id: 'field_block:node:our_team:field_worker_photo'
+              label: worker_photo
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          b4cac7c1-5df4-45a7-b102-ca9415ec3c7e:
+            uuid: b4cac7c1-5df4-45a7-b102-ca9415ec3c7e
+            region: blb_region_col_1
+            configuration:
+              id: 'field_block:node:our_team:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          f2385a07-8dce-43aa-a541-31a82cd48842:
+            uuid: f2385a07-8dce-43aa-a541-31a82cd48842
+            region: blb_region_col_1
+            configuration:
+              id: 'field_block:node:our_team:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          c06744c2-d008-4db9-baef-e6ee7be76a32:
+            uuid: c06744c2-d008-4db9-baef-e6ee7be76a32
+            region: blb_region_col_1
+            configuration:
+              id: 'field_block:node:our_team:field_socials'
+              label: socials
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: social_media_links_field_default
+                label: hidden
+                settings:
+                  appearance:
+                    orientation: h
+                    show_name: 0
+                  link_attributes:
+                    target: '<none>'
+                    rel: '<none>'
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          7571e290-a7cb-47e2-ba02-a2edfc015686:
+            uuid: 7571e290-a7cb-47e2-ba02-a2edfc015686
+            region: blb_region_col_1
+            configuration:
+              id: 'extra_field_block:node:our_team:flag_custom_like'
+              label: 'Flag: <em class="placeholder">custom like</em>'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                settings: {  }
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          4707d650-38ae-4e94-b021-c77e16c02c28:
+            uuid: 4707d650-38ae-4e94-b021-c77e16c02c28
+            region: blb_region_col_1
+            configuration:
+              id: 'field_block:node:our_team:field_worker_photo'
+              label: worker_photo
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.our_team.full
+targetEntityType: node
+bundle: our_team
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_worker_photo:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  flag_custom_like:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: blb_region_col_1
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_role_in_team: true
+  field_socials: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true
